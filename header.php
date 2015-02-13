@@ -12,9 +12,6 @@
 		<header>
 			<h1><?php bloginfo('name'); ?>*</h1>
 			<nav>
-				<ul>
-					<li>Home</li>
-					<li>WordPress</li>
-				</ul>
+				<?php wp_nav_menu( array( 'menu' => 'Main Nav') ); ?>
 			</nav>
 		</header>
