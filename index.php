@@ -1,5 +1,6 @@
 	<?php get_header(); ?>
-		<section>
+	<div class="clearfix">
+		<section class="main">
 			<img src="<?php bloginfo('stylesheet_directory'); ?>/images/mandarin_oranges.jpg" />
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<section>
@@ -11,4 +12,6 @@
 			<?php endif; ?>
 			<p class="disclaimer">*may be an overstatement</p>
 		</section>
-		<?php get_footer(); ?>
+		<?php get_sidebar(); ?>
+	</div>
+	<?php get_footer(); ?>
